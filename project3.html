@@ -3,8 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 1 - Surya Prabhakaran</title>
+    <title>Geospatial Analysis: Drone vs Truck Deliveries - Surya Prabhakaran</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Minimal black and white styles */
+        .external-link-section {
+            border: 1px solid #e0e0e0;
+            padding: 2rem;
+            margin: 3rem 0;
+            text-align: center;
+        }
+        
+        .external-link-section h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+        
+        .external-link-section p {
+            color: #666666;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .external-link-btn {
+            display: inline-block;
+            background: #1a1a1a;
+            color: white;
+            padding: 0.875rem 2rem;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: background 0.2s ease;
+        }
+        
+        .external-link-btn:hover {
+            background: #333333;
+        }
+        
+        .external-link-btn::after {
+            content: " →";
+            margin-left: 0.5rem;
+        }
+        
+        .key-highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .highlight-card {
+            border-top: 1px solid #1a1a1a;
+            padding-top: 1rem;
+        }
+        
+        .highlight-card h4 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            color: #1a1a1a;
+            font-weight: 500;
+        }
+        
+        .highlight-card p {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        
+        .tools-used {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 2rem 0;
+        }
+        
+        .tool-tag {
+            border: 1px solid #e0e0e0;
+            color: #666666;
+            padding: 0.4rem 0.875rem;
+            font-size: 0.85rem;
+            font-weight: 400;
+        }
+    </style>
 </head>
 <body>
     <!-- Header/Navigation -->
@@ -26,29 +107,84 @@
         <a href="index.html#work" class="back-link">← Back to Work</a>
         
         <div class="project-header">
-            <h1>Project Title 1</h1>
+            <h1>Spatial Analysis: Carbon Emissions for Drone vs Truck Deliveries</h1>
             <div class="project-meta">
-                <span>Year: 2024</span>
-                <span>Type: Building Performance Analysis</span>
-                <span>Location: TBD</span>
+                <span>Year: 2020</span>
+                <span>Type: Geospatial Data Science in Python</span>
+                <span>Collaborator:Atharva Ranade</span>
             </div>
             <p class="project-description">
-                Add your project description here. Explain the design challenge, your approach, the methodology used, key findings, and impact. This should be 2-3 paragraphs that give context to the images below.
+                This spatial analysis project investigates the environmental impact of delivery methods by comparing CO2 emissions between drone and truck deliveries in urban and suburban contexts. Using advanced geospatial analysis techniques, we analyzed delivery networks in Manhattan (high-density urban) and Yonkers County (suburban) to understand how delivery mode efficiency varies with urban density and infrastructure.
             </p>
             <p class="project-description">
-                Additional context about the tools used (ClimateStudio, Ladybug Tools, energy modeling software), research methodology, sustainability goals achieved, decarbonization strategies implemented, or any other relevant technical details.
+                The study employs shortest path algorithms, network analysis, and spatial clustering to model realistic delivery scenarios. By analyzing factors such as traffic patterns, delivery density, flight restrictions, and infrastructure constraints, we provide data-driven insights into the environmental tradeoffs between emerging drone delivery systems and traditional truck-based logistics.
             </p>
         </div>
 
-        <!-- Project Images -->
+        <!-- External Link Section -->
+        <div class="external-link-section">
+            <h3>View the Complete Interactive Analysis</h3>
+            <p>This project includes detailed analysis, interactive maps, methodology documentation, and comprehensive results across multiple urban contexts.</p>
+            <a href="https://suryajps.github.io/Spatial-Analysis-for-Drone-vs-Truck-Deliveries-/" target="_blank" class="external-link-btn">
+                View Full Project Site
+            </a>
+        </div>
+
+        <!-- Key Highlights -->
+        <div class="key-highlights">
+            <div class="highlight-card">
+                <h4>Background Research</h4>
+                <p>Literature review and narrative analysis of existing research on delivery methods, drone technology capabilities, and urban logistics systems.</p>
+            </div>
+            
+            <div class="highlight-card">
+                <h4>Manhattan Analysis</h4>
+                <p>High-density urban analysis using OSMNX network analysis, shortest path algorithms, and DBSCAN clustering to model delivery patterns in complex urban environments.</p>
+            </div>
+            
+            <div class="highlight-card">
+                <h4>Yonkers County Analysis</h4>
+                <p>Suburban context comparison examining how lower density and different infrastructure patterns affect the relative efficiency of delivery modes.</p>
+            </div>
+            
+            <div class="highlight-card">
+                <h4>Results & Conclusions</h4>
+                <p>Comprehensive comparison of CO2 emissions, discussion of findings, and recommendations for future implementation and research directions.</p>
+            </div>
+        </div>
+
+        <!-- Tools Used -->
+        <h3 style="margin-top: 3rem; margin-bottom: 1rem; font-weight: 500;">Tools & Technologies</h3>
+        <div class="tools-used">
+            <span class="tool-tag">Python</span>
+            <span class="tool-tag">OSMNX</span>
+            <span class="tool-tag">GeoPandas</span>
+            <span class="tool-tag">Folium</span>
+            <span class="tool-tag">DBSCAN Clustering</span>
+            <span class="tool-tag">Network Analysis</span>
+            <span class="tool-tag">Shortest Path Algorithms</span>
+            <span class="tool-tag">Spatial Analysis</span>
+            <span class="tool-tag">Jekyll</span>
+        </div>
+
+        <!-- Preview Images Section -->
+        <h3 style="margin-top: 3rem; margin-bottom: 1.5rem; font-weight: 500;">Project Preview</h3>
         <div class="project-images">
-            <img src="images/project1/image1.jpg" alt="Project 1 - Image 1">
-            <img src="images/project1/image2.jpg" alt="Project 1 - Image 2">
-            <img src="images/project1/image3.jpg" alt="Project 1 - Image 3">
-            <img src="images/project1/image4.jpg" alt="Project 1 - Image 4">
-            <!-- Add more images as needed -->
-            <!-- <img src="images/project1/image5.jpg" alt="Project 1 - Image 5"> -->
-            <!-- <img src="images/project1/image6.jpg" alt="Project 1 - Image 6"> -->
+            <img src="images/project3/image1.jpg" alt="Drone vs Truck Analysis - Overview">
+            <img src="images/project3/image2.jpg" alt="Manhattan Network Analysis">
+            <img src="images/project3/image3.jpg" alt="Yonkers County Analysis">
+            <img src="images/project3/image4.jpg" alt="Results and Conclusions">
+            <!-- Add more preview images if you have them -->
+        </div>
+
+        <!-- Call to Action -->
+        <div style="text-align: center; margin: 4rem 0; padding-top: 3rem; border-top: 1px solid #e0e0e0;">
+            <p style="font-size: 1rem; color: #666; margin-bottom: 1.5rem;">
+                Explore the complete analysis with interactive maps, detailed methodology, and comprehensive results
+            </p>
+            <a href="https://suryajps.github.io/Spatial-Analysis-for-Drone-vs-Truck-Deliveries-/" target="_blank" class="external-link-btn">
+                View Full Project Site
+            </a>
         </div>
     </section>
 
@@ -57,8 +193,8 @@
         <div class="footer-content">
             <p>© 2024 Surya Prabhakaran</p>
             <div class="social-links">
-                <a href="mailto:suryajp@alumni.upenn.edu">Email</a>
-                <a href="https://www.linkedin.com/in/surya-jp/" target="_blank">LinkedIn</a>
+                <a href="mailto:your.email@example.com">Email</a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
             </div>
         </div>
     </footer>
