@@ -55,7 +55,7 @@ portfolio/
 
 ### 4. **Update Contact Information**
    - In `index.html` and all project pages, update the footer:
-     - Replace `your.email@example.com` with your actual email
+     - Replace `suryajp@alumni.upenn.edu` with your actual email
      - Replace `linkedin.com/in/yourprofile` with your LinkedIn URL
 
 ### 5. **Upload to GitHub**
