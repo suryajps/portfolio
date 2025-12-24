@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Surya Prabhakaran</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional CV-specific styles */
+        .cv-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 8rem 3rem 6rem;
+        }
+
+        .cv-header {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .cv-header h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .cv-header .tagline {
+            font-size: 1.1rem;
+            color: #666666;
+            margin-bottom: 1.5rem;
+        }
+
+        .cv-contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            font-size: 0.95rem;
+            color: #666666;
+        }
+
+        .cv-contact a {
+            color: #666666;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .cv-contact a:hover {
+            color: #1a1a1a;
+        }
+
+        .cv-section {
+            margin-bottom: 3rem;
+        }
+
+        .cv-section h2 {
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #1a1a1a;
+            letter-spacing: -0.01em;
+        }
+
+        .cv-item {
+            margin-bottom: 2rem;
+        }
+
+        .cv-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .cv-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.5rem;
+        }
+
+        .cv-item-title {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #1a1a1a;
+        }
+
+        .cv-item-date {
+            font-size: 0.9rem;
+            color: #666666;
+            white-space: nowrap;
+        }
+
+        .cv-item-subtitle {
+            font-size: 1rem;
+            color: #666666;
+            margin-bottom: 0.75rem;
+        }
+
+        .cv-item-description {
+            color: #666666;
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+
+        .cv-item-description ul {
+            margin: 0.5rem 0 0 1.25rem;
+            padding: 0;
+        }
+
+        .cv-item-description li {
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+
+        .cv-skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .cv-skill-category h3 {
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            color: #1a1a1a;
+        }
+
+        .cv-skill-category ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .cv-skill-category li {
+            color: #666666;
+            font-size: 0.95rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .download-cv {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .download-cv a {
+            display: inline-block;
+            background: #1a1a1a;
+            color: white;
+            padding: 0.875rem 2rem;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: background 0.2s ease;
+        }
+
+        .download-cv a:hover {
+            background: #333333;
+        }
+
+        @media (max-width: 768px) {
+            .cv-container {
+                padding: 7rem 1.5rem 4rem;
+            }
+
+            .cv-header h1 {
+                font-size: 2rem;
+            }
+
+            .cv-item-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .cv-item-date {
+                margin-top: 0.25rem;
+            }
+
+            .cv-skills {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header>
+        <nav>
+            <div class="nav-content">
+                <a href="index.html" class="logo">Surya Prabhakaran</a>
+                <ul class="nav-links">
+                    <li><a href="index.html#work">Work</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- CV Content -->
+    <div class="cv-container">
+        <!-- CV Header -->
+        <div class="cv-header">
+            <h1>Surya Prabhakaran</h1>
+            <p class="tagline">Building Performance Researcher | Environmental Building Design | WELL AP</p>
+            <div class="cv-contact">
+                <span>Philadelphia, PA</span>
+                <a href="mailto:suryajp@alumni.upenn.edu">suryajp@alumni.upenn.edu</a>
+                <a href="https://www.linkedin.com/in/surya-jp/" target="_blank">LinkedIn</a>
+                <a href="index.html">Portfolio</a>
+            </div>
+        </div>
+
+        <!-- Experience -->
+        <section class="cv-section">
+            <h2>Experience</h2>
+            
+            <div class="cv-item">
+                <div class="cv-item-header">
+                    <div class="cv-item-title">Researcher - Building Performance</div>
+                    <div class="cv-item-date">2021 - Present</div>
+                </div>
+                <div class="cv-item-subtitle">KieranTimberlake, Philadelphia, PA</div>
+                <div class="cv-item-description">
+                    <ul>
+                        <li>Lead building performance strategy and decarbonization initiatives for 15+ institutional projects</li>
+                        <li>Developed carbon reduction strategies and baseline emissions analysis, evaluating electrification and renewable energy pathways</li>
+                        <li>Established firmwide material health assessment process, partnering with vendors to implement selection tools</li>
+                        <li>Created comprehensive environmental guidelines integrating international sustainability frameworks and circularity principles</li>
+                        <li>Conducted building performance analysis including energy modeling, daylighting optimization, and thermal comfort studies</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Add more experience items as needed -->
+        </section>
+
+        <!-- Education -->
+        <section class="cv-section">
+            <h2>Education</h2>
+            
+            <div class="cv-item">
+                <div class="cv-item-header">
+                    <div class="cv-item-title">Master of Science in Environmental Building Design</div>
+                    <div class="cv-item-date">2020</div>
+                </div>
+                <div class="cv-item-subtitle">University of Pennsylvania, Weitzman School of Design</div>
+            </div>
+
+            <div class="cv-item">
+                <div class="cv-item-header">
+                    <div class="cv-item-title">Bachelor of Architecture</div>
+                    <div class="cv-item-date">2018</div>
+                </div>
+                <div class="cv-item-subtitle">Your University Name</div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="cv-section">
+            <h2>Skills & Tools</h2>
+            <div class="cv-skills">
+                <div class="cv-skill-category">
+                    <h3>Building Performance</h3>
+                    <ul>
+                        <li>Energy Modeling</li>
+                        <li>Daylighting Analysis</li>
+                        <li>Climate Analysis</li>
+                        <li>Thermal Comfort</li>
+                    </ul>
+                </div>
+                <div class="cv-skill-category">
+                    <h3>Software</h3>
+                    <ul>
+                        <li>ClimateStudio</li>
+                        <li>Ladybug Tools</li>
+                        <li>Rhino/Grasshopper</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+                <div class="cv-skill-category">
+                    <h3>Sustainability</h3>
+                    <ul>
+                        <li>LEED AP</li>
+                        <li>WELL AP</li>
+                        <li>LBC Knowledge</li>
+                        <li>Carbon Accounting</li>
+                    </ul>
+                </div>
+                <div class="cv-skill-category">
+                    <h3>Research Methods</h3>
+                    <ul>
+                        <li>Data Analysis</li>
+                        <li>GIS/Spatial Analysis</li>
+                        <li>Material Assessment</li>
+                        <li>LCA</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications -->
+        <section class="cv-section">
+            <h2>Certifications</h2>
+            <div class="cv-item">
+                <div class="cv-item-header">
+                    <div class="cv-item-title">WELL Accredited Professional (WELL AP)</div>
+                    <div class="cv-item-date">2024</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Optional: Download PDF -->
+        <!-- <div class="download-cv">
+            <a href="documents/Surya_Prabhakaran_CV.pdf" download>Download PDF</a>
+        </div> -->
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <p>© 2024 Surya Prabhakaran</p>
+            <div class="social-links">
+                <a href="mailto:suryajp@alumni.upenn.edu">Email</a>
+                <a href="https://www.linkedin.com/in/surya-jp/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
