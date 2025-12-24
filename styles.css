@@ -49,16 +49,6 @@ header {
     color: var(--text-primary);
     text-decoration: none;
     letter-spacing: -0.02em;
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-}
-
-.logo-pic {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    object-fit: cover;
 }
 
 .nav-links {
@@ -80,51 +70,57 @@ header {
 
 /* Hero Section */
 .hero {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 10rem 3rem 6rem;
 }
 
-.hero-content {
-    display: flex;
+.hero-layout {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     gap: 4rem;
-    align-items: center;
+    align-items: start;
+}
+
+.hero-name h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    color: var(--text-primary);
+    white-space: nowrap;
 }
 
 .hero-text {
-    flex: 1;
+    max-width: 700px;
 }
 
-.hero-image {
-    flex: 0 0 300px;
-}
-
-.hero-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-    object-fit: cover;
-    aspect-ratio: 1 / 1;
-}
-
-.hero h1 {
-    font-size: 3rem;
-    font-weight: 600;
-    margin-bottom: 2rem;
-    letter-spacing: -0.03em;
-}
-
-.intro {
-    font-size: 1.25rem;
+.hero-text .intro {
+    font-size: 1.1rem;
     line-height: 1.7;
     color: var(--text-secondary);
     margin-bottom: 1.5rem;
 }
 
-.credentials {
-    font-size: 0.95rem;
+.hero-text .credentials {
+    font-size: 0.9rem;
+    line-height: 1.6;
     color: var(--text-secondary);
+}
+
+.hero-text .credentials em {
     font-style: italic;
+}
+
+.hero-profile {
+    width: 280px;
+    flex-shrink: 0;
+}
+
+.hero-profile img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* Work Section */
@@ -302,21 +298,19 @@ footer {
         padding: 8rem 1.5rem 4rem;
     }
     
-    .hero-content {
-        flex-direction: column-reverse;
+    .hero-layout {
+        grid-template-columns: 1fr;
         gap: 2rem;
     }
     
-    .hero-image {
-        flex: 0 0 200px;
+    .hero-name h1 {
+        font-size: 2.5rem;
+        white-space: normal;
     }
     
-    .hero h1 {
-        font-size: 2rem;
-    }
-    
-    .intro {
-        font-size: 1.1rem;
+    .hero-profile {
+        width: 200px;
+        margin: 0 auto;
     }
     
     .work-section {
