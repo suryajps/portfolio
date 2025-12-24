@@ -5,6 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 5 - Surya Prabhakaran</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Slideshow styles - minimal black and white */
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            margin: 2rem 0;
+            background: #f5f5f5;
+        }
+
+        .slideshow-image-wrapper {
+            position: relative;
+            width: 100%;
+            padding-top: 66.67%; /* 3:2 aspect ratio */
+            overflow: hidden;
+        }
+
+        .slideshow-image-wrapper img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: none;
+        }
+
+        .slideshow-image-wrapper img.active {
+            display: block;
+        }
+
+        /* Navigation arrows */
+        .slideshow-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid #1a1a1a;
+            color: #1a1a1a;
+            font-size: 1.2rem;
+            padding: 0.75rem 1rem;
+            cursor: pointer;
+            transition: background 0.2s ease;
+            z-index: 10;
+            user-select: none;
+        }
+
+        .slideshow-nav:hover {
+            background: #1a1a1a;
+            color: white;
+        }
+
+        .slideshow-prev {
+            left: 1rem;
+        }
+
+        .slideshow-next {
+            right: 1rem;
+        }
+
+        /* Dots/indicators */
+        .slideshow-dots {
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        .slideshow-dot {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border: 1px solid #1a1a1a;
+            background: white;
+            margin: 0 0.25rem;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .slideshow-dot.active {
+            background: #1a1a1a;
+        }
+
+        .slideshow-dot:hover {
+            background: #666666;
+        }
+
+        /* Image counter */
+        .slideshow-counter {
+            text-align: center;
+            color: #666666;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+
+        /* Project separator */
+        .project-separator {
+            border-top: 1px solid #e0e0e0;
+            margin: 5rem 0 4rem;
+        }
+
+        .sub-project {
+            margin-bottom: 4rem;
+        }
+
+        .sub-project:last-of-type {
+            margin-bottom: 0;
+        }
+    </style>
 </head>
 <body>
     <!-- Header/Navigation -->
@@ -26,31 +132,79 @@
     <section class="project-detail">
         <a href="index.html#work" class="back-link">← Back to Work</a>
         
-        <div class="project-header">
-            <h1>Useful Daylight</h1>
-            <div class="project-meta">
-                <span>Year: 2021</span>
-                <span>Type: Building Design</span>
-                <span>Collaborators: Ryan Welch, Cooper Schilling, Philip Baraldi</span>
-                <span>Tools: Ladybug & Honeybee Tools</span>
+        <!-- First Project -->
+        <div class="sub-project">
+            <div class="project-header">
+                <h1>Solar Shading and Visual Comfort</h1>
+                <div class="project-meta">
+                    <span>Year: 2022</span>
+                    <span>Type: Project Work</span>
+                    <span>Collaborators: Kit Elsworth, Patrick Morgan</span>
+                    <span>Tools: Ladybug & Honeybee Tools</span>
+                </div>
+                <p class="project-description">
+                    This study addresses visual discomfort in a single-family residence in Pennsylvania with extensive south-facing glazing. The challenge was identifying when and where glare occurs throughout the year, then recommending targeted shading strategies that preserve daylight and views while eliminating the problematic glaring sun.
+                    <strong><em>Approach: </em></strong>Sun path diagrams established the seasonal range of solar angles. Hourly direct sun simulations mapped average daily sun across the living spaces for both summer and winter conditions. Point-in-time illuminance identified specific problematic moments: winter morning sun creating glare on the TV viewing area, low-angle winter midday sun hitting the dining table and kitchen island for 2-3 hours, and early summer morning sun striking the kitchen sink and counter.<br>
+                    Overhang effectiveness was tested at two depths. A 3'-0" overhang blocked summer midday sun but allowed afternoon penetration, while a 6'-0" overhang provided more comprehensive shading and reduced cooling loads. However, neither fully eliminated winter glare from the low-angle sun.<br>
+                    <strong><em>Key Findings: </em></strong>A layered strategy was then formulated with roof overhangs for peak summer shading, roller shades at select locations for year-round glare control, opacity treatments near the kitchen sink to block early morning direct sun, and courtyard trees positioned to shade south-facing glass in summer while limiting winter glare. The recommendations balanced passive solar design principles with occupant comfort across daily and seasonal cycles.
             </div>
-            <p class="project-description">
-                Add your project description here. Explain the design challenge, your approach, the methodology used, key findings, and impact. This should be 2-3 paragraphs that give context to the images below.
-            </p>
-            <p class="project-description">
-                Additional context about the tools used (ClimateStudio, Ladybug Tools, energy modeling software), research methodology, sustainability goals achieved, decarbonization strategies implemented, or any other relevant technical details.
-            </p>
+
+            <!-- Slideshow 1 -->
+            <div class="slideshow-container" id="slideshow1">
+                <div class="slideshow-image-wrapper">
+                    <img src="images/project5/project1-image1.jpg" alt="Project 1 - Image 1" class="active">
+                    <img src="images/project5/project1-image2.jpg" alt="Project 1 - Image 2">
+                    <img src="images/project5/project1-image3.jpg" alt="Project 1 - Image 3">
+                    <img src="images/project5/project1-image4.jpg" alt="Project 1 - Image 4">
+                    <img src="images/project5/project1-image5.jpg" alt="Project 1 - Image 5">
+                    <img src="images/project5/project1-image6.jpg" alt="Project 1 - Image 6">
+                </div>
+                <button class="slideshow-nav slideshow-prev" onclick="changeSlide('slideshow1', -1)">‹</button>
+                <button class="slideshow-nav slideshow-next" onclick="changeSlide('slideshow1', 1)">›</button>
+                <div class="slideshow-dots" id="slideshow1-dots"></div>
+                <div class="slideshow-counter" id="slideshow1-counter"></div>
+            </div>
         </div>
 
-        <!-- Project Images -->
-        <div class="project-images">
-            <img src="images/project1/image1.jpg" alt="Project 1 - Image 1">
-            <img src="images/project1/image2.jpg" alt="Project 1 - Image 2">
-            <img src="images/project1/image3.jpg" alt="Project 1 - Image 3">
-            <img src="images/project1/image4.jpg" alt="Project 1 - Image 4">
-            <!-- Add more images as needed -->
-            <!-- <img src="images/project1/image5.jpg" alt="Project 1 - Image 5"> -->
-            <!-- <img src="images/project1/image6.jpg" alt="Project 1 - Image 6"> -->
+        <!-- Separator -->
+        <div class="project-separator"></div>
+
+        <!-- Second Project -->
+        <div class="sub-project">
+            <div class="project-header">
+                <h1>Glare and Window Treatments</h1>
+                <div class="project-meta">
+                    <span>Year: 2024</span>
+                    <span>Type: Project Work</span>
+                    <span>Collaborators: Tim Peters</span>
+                    <span>Tools: ClimateStudio</span>
+                </div>
+                <p class="project-description">
+                    Text
+                <p class="project-description">
+                    <strong><em>Approach: </em></strong>TBD
+                    TBD
+                    <strong><em>Key Findings: </em></strong>TBD
+                </p>
+            </div>
+
+            <!-- Slideshow 2 -->
+            <div class="slideshow-container" id="slideshow2">
+                <div class="slideshow-image-wrapper">
+                    <img src="images/project5/project2-image1.jpg" alt="Project 2 - Image 1" class="active">
+                    <img src="images/project5/project2-image2.jpg" alt="Project 2 - Image 2">
+                    <img src="images/project5/project2-image3.jpg" alt="Project 2 - Image 3">
+                    <img src="images/project5/project2-image4.jpg" alt="Project 2 - Image 4">
+                    <img src="images/project5/project2-image5.jpg" alt="Project 2 - Image 5">
+                    <img src="images/project5/project2-image6.jpg" alt="Project 2 - Image 6">
+                    <img src="images/project5/project2-image7.jpg" alt="Project 2 - Image 7">
+                    <img src="images/project5/project2-image8.jpg" alt="Project 2 - Image 8">
+                </div>
+                <button class="slideshow-nav slideshow-prev" onclick="changeSlide('slideshow2', -1)">‹</button>
+                <button class="slideshow-nav slideshow-next" onclick="changeSlide('slideshow2', 1)">›</button>
+                <div class="slideshow-dots" id="slideshow2-dots"></div>
+                <div class="slideshow-counter" id="slideshow2-counter"></div>
+            </div>
         </div>
     </section>
 
@@ -59,10 +213,104 @@
         <div class="footer-content">
             <p>© 2024 Surya Prabhakaran</p>
             <div class="social-links">
-                <a href="mailto:suryajp@alumni.upenn.edu">Email</a>
-                <a href="https://www.linkedin.com/in/surya-jp/" target="_blank">LinkedIn</a>
+                <a href="mailto:your.email@example.com">Email</a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
             </div>
         </div>
     </footer>
+
+    <!-- Slideshow JavaScript -->
+    <script>
+        // Initialize slideshows
+        const slideshows = {};
+
+        function initSlideshow(slideshowId) {
+            const container = document.getElementById(slideshowId);
+            const images = container.querySelectorAll('.slideshow-image-wrapper img');
+            const dotsContainer = document.getElementById(slideshowId + '-dots');
+            const counter = document.getElementById(slideshowId + '-counter');
+            
+            slideshows[slideshowId] = {
+                currentIndex: 0,
+                totalSlides: images.length
+            };
+
+            // Create dots
+            for (let i = 0; i < images.length; i++) {
+                const dot = document.createElement('span');
+                dot.className = 'slideshow-dot' + (i === 0 ? ' active' : '');
+                dot.onclick = () => goToSlide(slideshowId, i);
+                dotsContainer.appendChild(dot);
+            }
+
+            // Update counter
+            updateCounter(slideshowId);
+        }
+
+        function changeSlide(slideshowId, direction) {
+            const slideshow = slideshows[slideshowId];
+            const container = document.getElementById(slideshowId);
+            const images = container.querySelectorAll('.slideshow-image-wrapper img');
+            const dots = container.querySelectorAll('.slideshow-dot');
+
+            // Remove active class from current slide and dot
+            images[slideshow.currentIndex].classList.remove('active');
+            dots[slideshow.currentIndex].classList.remove('active');
+
+            // Update index
+            slideshow.currentIndex = (slideshow.currentIndex + direction + slideshow.totalSlides) % slideshow.totalSlides;
+
+            // Add active class to new slide and dot
+            images[slideshow.currentIndex].classList.add('active');
+            dots[slideshow.currentIndex].classList.add('active');
+
+            // Update counter
+            updateCounter(slideshowId);
+        }
+
+        function goToSlide(slideshowId, index) {
+            const slideshow = slideshows[slideshowId];
+            const container = document.getElementById(slideshowId);
+            const images = container.querySelectorAll('.slideshow-image-wrapper img');
+            const dots = container.querySelectorAll('.slideshow-dot');
+
+            // Remove active class from current
+            images[slideshow.currentIndex].classList.remove('active');
+            dots[slideshow.currentIndex].classList.remove('active');
+
+            // Update index
+            slideshow.currentIndex = index;
+
+            // Add active class to new
+            images[slideshow.currentIndex].classList.add('active');
+            dots[slideshow.currentIndex].classList.add('active');
+
+            // Update counter
+            updateCounter(slideshowId);
+        }
+
+        function updateCounter(slideshowId) {
+            const slideshow = slideshows[slideshowId];
+            const counter = document.getElementById(slideshowId + '-counter');
+            counter.textContent = `${slideshow.currentIndex + 1} / ${slideshow.totalSlides}`;
+        }
+
+        // Initialize both slideshows when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            initSlideshow('slideshow1');
+            initSlideshow('slideshow2');
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft') {
+                changeSlide('slideshow1', -1);
+                changeSlide('slideshow2', -1);
+            } else if (e.key === 'ArrowRight') {
+                changeSlide('slideshow1', 1);
+                changeSlide('slideshow2', 1);
+            }
+        });
+    </script>
 </body>
 </html>
