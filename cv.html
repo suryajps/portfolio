@@ -64,7 +64,7 @@
         }
 
         .cv-item {
-            margin-bottom: 2rem;
+            margin-bottom: 2.5rem;
         }
 
         .cv-item:last-child {
@@ -96,6 +96,12 @@
             margin-bottom: 0.75rem;
         }
 
+        .cv-item-credential {
+            font-size: 0.85rem;
+            color: #999999;
+            margin-top: 0.25rem;
+        }
+
         .cv-item-description {
             color: #666666;
             line-height: 1.7;
@@ -110,6 +116,32 @@
         .cv-item-description li {
             margin-bottom: 0.5rem;
             line-height: 1.6;
+        }
+
+        .cv-projects-label {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: #1a1a1a;
+            margin-top: 0.75rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .cv-project-list {
+            color: #666666;
+            font-size: 0.9rem;
+            line-height: 1.8;
+        }
+
+        .cv-project-item {
+            margin-bottom: 0.5rem;
+            padding-left: 1rem;
+            position: relative;
+        }
+
+        .cv-project-item:before {
+            content: "•";
+            position: absolute;
+            left: 0;
         }
 
         .cv-skills {
@@ -135,6 +167,37 @@
             color: #666666;
             font-size: 0.95rem;
             margin-bottom: 0.25rem;
+        }
+
+        .publication-subsection {
+            margin-bottom: 2rem;
+        }
+
+        .publication-subsection:last-child {
+            margin-bottom: 0;
+        }
+
+        .publication-subsection h3 {
+            font-size: 1.05rem;
+            font-weight: 500;
+            color: #1a1a1a;
+            margin-bottom: 1rem;
+        }
+
+        .publication-item {
+            margin-bottom: 1.25rem;
+            color: #666666;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .publication-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .publication-title {
+            color: #1a1a1a;
+            font-weight: 500;
         }
 
         .download-cv {
@@ -204,7 +267,7 @@
         <!-- CV Header -->
         <div class="cv-header">
             <h1>Surya Prabhakaran</h1>
-            <p class="tagline">Researcher | Environmental Building Design | WELL AP</p>
+            <p class="tagline">Building Performance Researcher | Environmental Building Design | WELL AP</p>
             <div class="cv-contact">
                 <span>Philadelphia, PA</span>
                 <a href="mailto:suryajp@alumni.upenn.edu">suryajp@alumni.upenn.edu</a>
@@ -213,58 +276,44 @@
             </div>
         </div>
 
-        <!-- Experience -->
+        <!-- Certifications -->
         <section class="cv-section">
-            <h2>Experience</h2>
+            <h2>Certifications</h2>
             
             <div class="cv-item">
                 <div class="cv-item-header">
-                    <div class="cv-item-title">Researcher - Building Performance</div>
-                    <div class="cv-item-date">2021 - Present</div>
+                    <div class="cv-item-title">Healthier Materials and Sustainable Building Certificate</div>
+                    <div class="cv-item-date">Jan 2024</div>
                 </div>
-                <div class="cv-item-subtitle">KieranTimberlake, Philadelphia, PA</div>
-                <div class="cv-item-description">
-                    <ul>
-                        <li>Led building performance and material health research initiatives that advanced sustainability goals across institutional projects, from developing firmwide workflows to coordinating LEED and Living Building Challenge material assessments.</li> 
-                        <li>Incorporated carbon, energy, and materials assessments throughout project phases by working closely with design teams to translate research into design decisions.</li>
-                        <li>Contributed to business development efforts through client presentations that identified sustainability opportunities while highlighting the research group's capabilities.</li> 
-                        <li>Represented the firm's research capabilities through teaching, guest lectures, and AIA working groups.</li>
-                        Projects<br>
-                        University of Wisconsin-Madison, Music Hall Renovation + Addition for La Follete School of Public Affairs, Madison WI. Coordinating Researcher<br>
-                        Harvard University, Eliot House Dorm Renewal, Cambridge MA. LBC Materials Coordination<br>
-                        University of California Santa Cruz, Heller Development, Santa Cruz CA.<br>
-                        Massachusetts Institute of Technology, McCormick Hall Renewal, Cambridge MA. Coordinating Researcher<br>
-                        University of California Berkeley, Bancroft Housing, Berkeley CA.<br>
-                        Reinholds Residence, PA.<br>
-                        Penn State University, Sackett Renovation and Addition, State College PA.<br>
-                        Private Client<br>
-                        University of North Carolina, Porthole Alley Mixed-Use Campus Development, Chapel Hill NC. Coordinating Researcher<br>
-                        International Masonry Institute, Environmental Product Declaration Gap Analysis.<br>
-                        University of Pennsylvania, Stuart Weitzman Hall Renovation + Addition, Philadelphia PA. Coordinating Researcher<br>
-                        Open Home, Hillsdale Residence, PA.<br>
-                        Cascadia House, Seattle WA.<br>
-                        Brookfield Properties, Commercial Development, Washington DC.<br>
-                        Private Client<br>
-                        University of California Santa Cruz, Gateway Visioning, Santa Cruz CA.<br>
-                        2300 Market St Core & Shell Lab Building Overbuild and Renovation, Philadelphia PA.<br>
-                        University of Washington, Interdisciplinary Engineering Building, Seattle WA.<br>
-                        University of Washington, North Campus Housing, Seattle WA.<br>
-                    </ul>
-                </div>
+                <div class="cv-item-subtitle">The New School</div>
             </div>
-            <div class="cv-item-header">
-                    <div class="cv-item-title">Research Asscociate</div>
-                    <div class="cv-item-date">2021</div>
+
+            <div class="cv-item">
+                <div class="cv-item-header">
+                    <div class="cv-item-title">WELL AP</div>
+                    <div class="cv-item-date">Jun 2022</div>
                 </div>
-            <div class="cv-item-subtitle">University of Pennsylvania</div>
-                <div class="cv-item-description">
-                    <ul>
-                        <li>TBD</li>
-                        Projects<br>
-                    </ul>
-                </div>
+                <div class="cv-item-subtitle">International WELL Building Institute (IWBI)</div>
+                <div class="cv-item-credential">Credential ID WELL-AP-0000079529</div>
             </div>
-            <!-- Add more experience items as needed -->
+
+            <div class="cv-item">
+                <div class="cv-item-header">
+                    <div class="cv-item-title">LEED Green Associate</div>
+                    <div class="cv-item-date">Jan 2021</div>
+                </div>
+                <div class="cv-item-subtitle">U.S. Green Building Council</div>
+                <div class="cv-item-credential">Credential ID 11403428-GREEN-ASSOCIATE</div>
+            </div>
+
+            <div class="cv-item">
+                <div class="cv-item-header">
+                    <div class="cv-item-title">Architect</div>
+                    <div class="cv-item-date">Aug 2017</div>
+                </div>
+                <div class="cv-item-subtitle">Council of Architecture - India</div>
+                <div class="cv-item-credential">Credential ID CA/2017/84937</div>
+            </div>
         </section>
 
         <!-- Education -->
@@ -274,17 +323,133 @@
             <div class="cv-item">
                 <div class="cv-item-header">
                     <div class="cv-item-title">Master of Science in Environmental Building Design</div>
-                    <div class="cv-item-date">Aug 2019-Dec 2020</div>
+                    <div class="cv-item-date">Jul 2019 - Dec 2020</div>
                 </div>
-                <div class="cv-item-subtitle">University of Pennsylvania, Weitzman School of Design</div>
+                <div class="cv-item-subtitle">University of Pennsylvania, Weitzman School of Design, Philadelphia PA, USA</div>
             </div>
 
             <div class="cv-item">
                 <div class="cv-item-header">
                     <div class="cv-item-title">Bachelor of Architecture</div>
-                    <div class="cv-item-date">2011-2016</div>
+                    <div class="cv-item-date">May 2011 - Jul 2016</div>
                 </div>
-                <div class="cv-item-subtitle">Manipal University</div>
+                <div class="cv-item-subtitle">Manipal University, Manipal, India</div>
+            </div>
+        </section>
+
+        <!-- Work Experience -->
+        <section class="cv-section">
+            <h2>Work Experience</h2>
+            
+            <div class="cv-item">
+                <div class="cv-item-header">
+                    <div class="cv-item-title">Researcher - Building Performance</div>
+                    <div class="cv-item-date">Jan 2021 - Present</div>
+                </div>
+                <div class="cv-item-subtitle">KieranTimberlake, Philadelphia, PA</div>
+                
+                <div class="cv-item-description">
+                    <ul>
+                        <li>Led building performance and material health research initiatives that advanced sustainability goals across institutional projects, from developing firmwide workflows to coordinating LEED and Living Building Challenge material assessments.</li>
+                        <li>Incorporated carbon, energy, and materials assessments throughout project phases by working closely with design teams to translate research into design decisions.</li>
+                        <li>Contributed to business development efforts through client presentations that identified sustainability opportunities while highlighting the research group's capabilities.</li>
+                        <li>Represented the firm's research capabilities through teaching, guest lectures, and AIA working groups.</li>
+                    </ul>
+                </div>
+
+                <div class="cv-projects-label">Projects:</div>
+                <div class="cv-project-list">
+                    <div class="cv-project-item">University of Wisconsin-Madison, Music Hall Renovation + Addition for La Follete School of Public Affairs, Madison WI. Coordinating Researcher</div>
+                    <div class="cv-project-item">Harvard University, Eliot House Dorm Renewal, Cambridge MA. LBC Materials Coordination</div>
+                    <div class="cv-project-item">University of California Santa Cruz, Heller Development, Santa Cruz CA.</div>
+                    <div class="cv-project-item">Massachusetts Institute of Technology, McCormick Hall Renewal, Cambridge MA. Coordinating Researcher</div>
+                    <div class="cv-project-item">University of California Berkeley, Bancroft Housing, Berkeley CA.</div>
+                    <div class="cv-project-item">Reinholds Residence, PA.</div>
+                    <div class="cv-project-item">Penn State University, Sackett Renovation and Addition, State College PA.</div>
+                    <div class="cv-project-item">Private Client</div>
+                    <div class="cv-project-item">University of North Carolina, Porthole Alley Mixed-Use Campus Development, Chapel Hill NC. Coordinating Researcher</div>
+                    <div class="cv-project-item">International Masonry Institute, Environmental Product Declaration Gap Analysis.</div>
+                    <div class="cv-project-item">University of Pennsylvania, Stuart Weitzman Hall Renovation + Addition, Philadelphia PA. Coordinating Researcher</div>
+                    <div class="cv-project-item">Open Home, Hillsdale Residence, PA.</div>
+                    <div class="cv-project-item">Cascadia House, Seattle WA.</div>
+                    <div class="cv-project-item">Brookfield Properties, Commercial Development, Washington DC.</div>
+                    <div class="cv-project-item">Private Client</div>
+                    <div class="cv-project-item">University of California Santa Cruz, Gateway Visioning, Santa Cruz CA.</div>
+                    <div class="cv-project-item">2300 Market St Core & Shell Lab Building Overbuild and Renovation, Philadelphia PA.</div>
+                    <div class="cv-project-item">University of Washington, Interdisciplinary Engineering Building, Seattle WA.</div>
+                    <div class="cv-project-item">University of Washington, North Campus Housing, Seattle WA.</div>
+                </div>
+            </div>
+
+            <div class="cv-item">
+                <div class="cv-item-header">
+                    <div class="cv-item-title">Research Associate</div>
+                    <div class="cv-item-date">2021</div>
+                </div>
+                <div class="cv-item-subtitle">University of Pennsylvania, Philadelphia, PA</div>
+                
+                <div class="cv-projects-label">Projects:</div>
+                <div class="cv-project-list">
+                    <div class="cv-project-item">Assisted Prof.Dorit Aviv, NSF Grant- Threading High-Performance Self-Morphing Building Blocks Across Scales Toward a Sustainable Future. LifeCycle Assessment</div>
+                    <div class="cv-project-item">Assisted Prof.William Braham, Center for Environmental Building Design, Campus Energy Visualization Dashboard</div>
+                    <div class="cv-project-item">Assisted Prof.Nick Pevzner, Renewable Energy Siting in New York State. Geospatial Analysis</div>
+                </div>
+            </div>
+
+            <div class="cv-item">
+                <div class="cv-item-header">
+                    <div class="cv-item-title">Research Assistant</div>
+                    <div class="cv-item-date">2019 - 2020</div>
+                </div>
+                <div class="cv-item-subtitle">University of Pennsylvania, Philadelphia, PA</div>
+                
+                <div class="cv-projects-label">Projects:</div>
+                <div class="cv-project-list">
+                    <div class="cv-project-item">Assisted Prof.William Braham, Center for Environmental Building Design, Building Energy Management Plans and Campus Energy Analysis</div>
+                </div>
+            </div>
+
+            <div class="cv-item">
+                <div class="cv-item-header">
+                    <div class="cv-item-title">Architect</div>
+                    <div class="cv-item-date">2016 - 2019</div>
+                </div>
+                <div class="cv-item-subtitle">Kumar Consultants Architects, Bangalore, India</div>
+                
+                <div class="cv-projects-label">Projects:</div>
+                <div class="cv-project-list">
+                    <div class="cv-project-item">Commercial Building at 100ft. Road, Indiranagar, Bangalore. Schematic Design, Design Development</div>
+                    <div class="cv-project-item">Starbucks at Vittal Mallya Road, Bangalore. Concept Development</div>
+                    <div class="cv-project-item">Beena Residence, Bangalore. Design Development, Construction Documentation, Construction Administration</div>
+                    <div class="cv-project-item">Indian National War Memorial, Ministry of Defense, Delhi. Competition (Finalists)</div>
+                </div>
+            </div>
+
+            <div class="cv-item">
+                <div class="cv-item-header">
+                    <div class="cv-item-title">Architect</div>
+                    <div class="cv-item-date">2015 - 2016</div>
+                </div>
+                <div class="cv-item-subtitle">PR Design Group, Bangalore, India</div>
+                
+                <div class="cv-projects-label">Projects:</div>
+                <div class="cv-project-list">
+                    <div class="cv-project-item">Head Start Educational Academy, Bangalore. Design Development, Construction Documentation</div>
+                    <div class="cv-project-item">Cabana Farmhouse, Bangalore. Design Development</div>
+                </div>
+            </div>
+
+            <div class="cv-item">
+                <div class="cv-item-header">
+                    <div class="cv-item-title">Architect</div>
+                    <div class="cv-item-date">2014 - 2015</div>
+                </div>
+                <div class="cv-item-subtitle">Studio Parametric Architects, Bangalore, India</div>
+                
+                <div class="cv-projects-label">Projects:</div>
+                <div class="cv-project-list">
+                    <div class="cv-project-item">The Corniche Towers, Jeddah, Saudi Arabia. BIM Modelling, Design Development</div>
+                </div>
             </div>
         </section>
 
@@ -295,10 +460,13 @@
                 <div class="cv-skill-category">
                     <h3>Building Performance</h3>
                     <ul>
-                        <li>Energy Modeling</li>
-                        <li>Daylighting Analysis</li>
-                        <li>Climate Analysis</li>
+                        <li>Early Phase Energy Modeling</li>
+                        <li>Daylighting and Glare Analysis</li>
+                        <li>Facade Sensitivity and Optimization</li>
+                        <li>LifeCycle Assessment</li>
                         <li>Thermal Comfort</li>
+                        <li>Wind CFD Analysis</li>
+                        <li>THERM Modelling</li>
                     </ul>
                 </div>
                 <div class="cv-skill-category">
@@ -307,16 +475,8 @@
                         <li>ClimateStudio</li>
                         <li>Ladybug Tools</li>
                         <li>Rhino/Grasshopper</li>
-                        <li>Python</li>
-                    </ul>
-                </div>
-                <div class="cv-skill-category">
-                    <h3>Sustainability</h3>
-                    <ul>
-                        <li>LEED AP</li>
-                        <li>WELL AP</li>
-                        <li>LBC Knowledge</li>
-                        <li>Carbon Accounting</li>
+                        <li>Autodesk Forma</li>
+                        <li>Python-Pandas</li>
                     </ul>
                 </div>
                 <div class="cv-skill-category">
@@ -325,27 +485,94 @@
                         <li>Data Analysis</li>
                         <li>GIS/Spatial Analysis</li>
                         <li>Material Assessment</li>
-                        <li>LCA</li>
+                        <li>Data Visualization</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <!-- Certifications -->
+        <!-- Publications -->
         <section class="cv-section">
-            <h2>Certifications</h2>
-            <div class="cv-item">
-                <div class="cv-item-header">
-                    <div class="cv-item-title">WELL Accredited Professional (WELL AP)</div>
-                    <div class="cv-item-date">2024</div>
+            <h2>Publications</h2>
+            
+            <div class="publication-subsection">
+                <h3>Papers</h3>
+                <div class="publication-item">
+                    <span class="publication-title">Embodied carbon in biogenic and earth materials: Accounting for the work of the biogeosphere in construction materials.</span><br>
+                    Braham, William W., Miaomiao Hou, Suryakiran Prabhakaran, and David Tilley, in Rahman Azari (ed.), The Routledge Handbook on Embodied Carbon in the Built Environment (Routledge), 2024
+                </div>
+            </div>
+
+            <div class="publication-subsection">
+                <h3>Projects</h3>
+                <div class="publication-item">
+                    <span class="publication-title">'Sanctuary of Datum' Bioclimatic Design Studio project published;</span><br>
+                    London Design Biennale, Design in an Age of Crisis Gallery, 2021
+                </div>
+                <div class="publication-item">
+                    Pressing Matters 9, 2019-2020
+                </div>
+                <div class="publication-item">
+                    National War Memorial Design Competition (Shortlisted Entry) published by FOAID in Idea Next Coffee table book, 2017
+                </div>
+            </div>
+
+            <div class="publication-subsection">
+                <h3>Lectures - External</h3>
+                <div class="publication-item">
+                    Sustainable Design in Practice, Temple University, 2023. Presenter
+                </div>
+                <div class="publication-item">
+                    Sustainable Design Practices, University of Colorado Denver, 2023. Presenter
+                </div>
+                <div class="publication-item">
+                    Environmental Design and Simulation in Practice - Stuart Weitzman Hall Case Study, University of Pennsylvania, 2025. Presenter
+                </div>
+                <div class="publication-item">
+                    Operational and Embodied Carbon in Renovation/Adaptive Reuse Projects, AIA COTE 2030 Philadelphia, 2022. Presenter
+                </div>
+            </div>
+
+            <div class="publication-subsection">
+                <h3>Lectures - Internal</h3>
+                <div class="publication-item">
+                    Design for Freedom & Yale School of Architecture Supply Chain Equity Symposium, KieranTimberlake Knowledge Communities, 2025. Presenter
+                </div>
+                <div class="publication-item">
+                    Circularity in Practice, KieranTimberlake Beyond 2030 Lecture, 2025. Presenter
+                </div>
+                <div class="publication-item">
+                    WELL-Passive House-LBC, KieranTimberlake Beyond 2030 Lecture, 2024. Presenter
+                </div>
+                <div class="publication-item">
+                    Healthy Materials Update, KieranTimberlake Beyond 2030 Lecture, 2024. Presenter
+                </div>
+                <div class="publication-item">
+                    Materials Standard Practices, KieranTimberlake Beyond 2030 Lecture, 2024. Presenter
+                </div>
+            </div>
+
+            <div class="publication-subsection">
+                <h3>Teaching, Reviews</h3>
+                <div class="publication-item">
+                    Bioclimatic Design Studio - Professor. Dorit Aviv, Summer 2021. Teaching Assistant
+                </div>
+                <div class="publication-item">
+                    Environmental Building Design (EBD) Research Studio- Professor. Billie Faircloth & Professor. William Braham, Fall 2022. Teaching Assistant.
+                </div>
+                <div class="publication-item">
+                    EBD Research Studio, Final Review, Fall 2024. Juror
+                </div>
+                <div class="publication-item">
+                    EBD Research Studio, Mid Review, Fall 2023. Juror
                 </div>
             </div>
         </section>
 
-        <!-- Optional: Download PDF -->
-        <!-- <div class="download-cv">
+        <!-- Download PDF -->
+        <div class="download-cv">
             <a href="documents/Surya_Prabhakaran_CV.pdf" download>Download PDF</a>
-        </div> -->
+        </div>
     </div>
 
     <!-- Footer -->
