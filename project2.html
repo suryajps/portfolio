@@ -3,8 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 2 - Surya Prabhakaran</title>
+    <title>Window & Sleep Quality - Surya Prabhakaran</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Slideshow styles */
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            margin: 3rem 0;
+            background: #f5f5f5;
+        }
+
+        .slideshow-image-wrapper {
+            position: relative;
+            width: 100%;
+            padding-top: 66.67%; /* 3:2 aspect ratio */
+            overflow: hidden;
+        }
+
+        .slideshow-image-wrapper img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: none;
+        }
+
+        .slideshow-image-wrapper img.active {
+            display: block;
+        }
+
+        /* Navigation arrows */
+        .slideshow-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid #1a1a1a;
+            color: #1a1a1a;
+            font-size: 1.2rem;
+            padding: 0.75rem 1rem;
+            cursor: pointer;
+            transition: background 0.2s ease;
+            z-index: 10;
+            user-select: none;
+        }
+
+        .slideshow-nav:hover {
+            background: #1a1a1a;
+            color: white;
+        }
+
+        .slideshow-prev {
+            left: 1rem;
+        }
+
+        .slideshow-next {
+            right: 1rem;
+        }
+
+        /* Dots/indicators */
+        .slideshow-dots {
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        .slideshow-dot {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border: 1px solid #1a1a1a;
+            background: white;
+            margin: 0 0.25rem;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .slideshow-dot.active {
+            background: #1a1a1a;
+        }
+
+        .slideshow-dot:hover {
+            background: #666666;
+        }
+
+        /* Image counter */
+        .slideshow-counter {
+            text-align: center;
+            color: #666666;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+    </style>
 </head>
 <body>
     <!-- Header/Navigation -->
@@ -26,6 +118,7 @@
     <section class="project-detail">
         <a href="index.html#work" class="back-link">← Back to Work</a>
         
+        <!-- 1. Title and Meta -->
         <div class="project-header">
             <h1>Window & Sleep Quality</h1>
             <div class="project-meta">
@@ -34,21 +127,14 @@
                 <span>Collaborators: Sung Di, Abinayaa Perezhilan</span>
                 <span>Instructor: Billie Faircloth</span>
             </div>
+            
+            <!-- 2. First Description -->
             <p class="project-description">
                 The project explores the demands on a window, and the total potential there-in for it to do and be more, both environmentally and culturally. My research explores how windows affect sleep quality through two often-overlooked factors: ambient light at night and environmental noise. Rather than evaluating windows solely for thermal performance or views, the project centers on occupant wellbeing and circadian health.
             </p>
         </div>
 
-        <!-- Project Images -->
-        <div class="project-images">
-            <img src="images/project2/image1.jpg" alt="Project 2 - Image 1">
-        </div>
-        <p class="project-description">
-                The investigation combined spatial analysis with environmental monitoring to understand the window's role as a mediator between exterior conditions and interior comfort. Ray tracing identified external light sources like street lamps and traffic signals, while RGB imaging photometry captured how nighttime light actually affects human photoreceptors. Light sensors tracked exposure patterns from the window sill to bedside, documenting how early morning daylight enters the space.<br>
-                Acoustic measurements compared sound levels with the window open and closed across different times of day. Spectral frequency analysis revealed not just decibel levels, but the character of noise from idling vehicles to accelerating traffic that penetrates the interior.<br>
-                The study reveals windows as critical regulators of health, managing the light and sound that shape our daily rhythms and sleep quality.
-            </p>
-        <!-- Slideshow 1 -->
+        <!-- 3. Slideshow -->
         <div class="slideshow-container" id="slideshow1">
             <div class="slideshow-image-wrapper">
                 <img src="images/project2/image2.jpg" alt="Project 2 - Image 2" class="active">
@@ -58,13 +144,25 @@
                 <img src="images/project2/image6.jpg" alt="Project 2 - Image 6">
                 <img src="images/project2/image7.jpg" alt="Project 2 - Image 7">
                 <img src="images/project2/image8.jpg" alt="Project 2 - Image 8">
-                 <img src="images/project2/image9.jpg" alt="Project 2 - Image 9">
+                <img src="images/project2/image9.jpg" alt="Project 2 - Image 9">
                 <img src="images/project2/image10.jpg" alt="Project 2 - Image 10">
             </div>
             <button class="slideshow-nav slideshow-prev" onclick="changeSlide('slideshow1', -1)">‹</button>
             <button class="slideshow-nav slideshow-next" onclick="changeSlide('slideshow1', 1)">›</button>
             <div class="slideshow-dots" id="slideshow1-dots"></div>
             <div class="slideshow-counter" id="slideshow1-counter"></div>
+        </div>
+
+        <!-- 4. Second Description -->
+        <p class="project-description">
+            The investigation combined spatial analysis with environmental monitoring to understand the window's role as a mediator between exterior conditions and interior comfort. Ray tracing identified external light sources like street lamps and traffic signals, while RGB imaging photometry captured how nighttime light actually affects human photoreceptors. Light sensors tracked exposure patterns from the window sill to bedside, documenting how early morning daylight enters the space.<br><br>
+            Acoustic measurements compared sound levels with the window open and closed across different times of day. Spectral frequency analysis revealed not just decibel levels, but the character of noise from idling vehicles to accelerating traffic that penetrates the interior.<br><br>
+            The study reveals windows as critical regulators of health, managing the light and sound that shape our daily rhythms and sleep quality.
+        </p>
+
+        <!-- 5. Final Image -->
+        <div class="project-images">
+            <img src="images/project2/image1.jpg" alt="Project 2 - Final Image">
         </div>
     </section>
 
@@ -78,5 +176,96 @@
             </div>
         </div>
     </footer>
+
+    <!-- Slideshow JavaScript -->
+    <script>
+        // Initialize slideshows
+        const slideshows = {};
+
+        function initSlideshow(slideshowId) {
+            const container = document.getElementById(slideshowId);
+            const images = container.querySelectorAll('.slideshow-image-wrapper img');
+            const dotsContainer = document.getElementById(slideshowId + '-dots');
+            const counter = document.getElementById(slideshowId + '-counter');
+            
+            slideshows[slideshowId] = {
+                currentIndex: 0,
+                totalSlides: images.length
+            };
+
+            // Create dots
+            for (let i = 0; i < images.length; i++) {
+                const dot = document.createElement('span');
+                dot.className = 'slideshow-dot' + (i === 0 ? ' active' : '');
+                dot.onclick = () => goToSlide(slideshowId, i);
+                dotsContainer.appendChild(dot);
+            }
+
+            // Update counter
+            updateCounter(slideshowId);
+        }
+
+        function changeSlide(slideshowId, direction) {
+            const slideshow = slideshows[slideshowId];
+            const container = document.getElementById(slideshowId);
+            const images = container.querySelectorAll('.slideshow-image-wrapper img');
+            const dots = container.querySelectorAll('.slideshow-dot');
+
+            // Remove active class from current slide and dot
+            images[slideshow.currentIndex].classList.remove('active');
+            dots[slideshow.currentIndex].classList.remove('active');
+
+            // Update index
+            slideshow.currentIndex = (slideshow.currentIndex + direction + slideshow.totalSlides) % slideshow.totalSlides;
+
+            // Add active class to new slide and dot
+            images[slideshow.currentIndex].classList.add('active');
+            dots[slideshow.currentIndex].classList.add('active');
+
+            // Update counter
+            updateCounter(slideshowId);
+        }
+
+        function goToSlide(slideshowId, index) {
+            const slideshow = slideshows[slideshowId];
+            const container = document.getElementById(slideshowId);
+            const images = container.querySelectorAll('.slideshow-image-wrapper img');
+            const dots = container.querySelectorAll('.slideshow-dot');
+
+            // Remove active class from current
+            images[slideshow.currentIndex].classList.remove('active');
+            dots[slideshow.currentIndex].classList.remove('active');
+
+            // Update index
+            slideshow.currentIndex = index;
+
+            // Add active class to new
+            images[slideshow.currentIndex].classList.add('active');
+            dots[slideshow.currentIndex].classList.add('active');
+
+            // Update counter
+            updateCounter(slideshowId);
+        }
+
+        function updateCounter(slideshowId) {
+            const slideshow = slideshows[slideshowId];
+            const counter = document.getElementById(slideshowId + '-counter');
+            counter.textContent = `${slideshow.currentIndex + 1} / ${slideshow.totalSlides}`;
+        }
+
+        // Initialize slideshow when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            initSlideshow('slideshow1');
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft') {
+                changeSlide('slideshow1', -1);
+            } else if (e.key === 'ArrowRight') {
+                changeSlide('slideshow1', 1);
+            }
+        });
+    </script>
 </body>
 </html>
