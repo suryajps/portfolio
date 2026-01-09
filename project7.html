@@ -3,8 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 2 - Surya Prabhakaran</title>
+    <title>Embodied Carbon</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styling for multiple projects on one page */
+        .project-separator {
+            border-top: 1px solid #e0e0e0;
+            margin: 5rem 0 4rem;
+        }
+        
+        .sub-project {
+            margin-bottom: 4rem;
+        }
+        
+        .sub-project:last-of-type {
+            margin-bottom: 0;
+        }
+    </style>
 </head>
 <body>
     <!-- Header/Navigation -->
@@ -26,31 +41,58 @@
     <section class="project-detail">
         <a href="index.html#work" class="back-link">← Back to Work</a>
         
-        <div class="project-header">
-            <h1>Embodied Carbon</h1>
-            <div class="project-meta">
-                <span>Year: 2020</span>
-                <span>Type: Environmental Building Design Research Studio</span>
-                <span>Collaborators: Sung Di, Abinayaa Perezhilan</span>
-                <span>Instructors: Billie Faircloth</span>
+        <!-- First Project -->
+        <div class="sub-project">
+            <div class="project-header">
+                <h1>Structural System Comparison</h1>
+                <div class="project-meta">
+                    <span>Year: 2025</span>
+                    <span>Type: Project Work</span>
+                    <span>Collaborators: Ryan Welch, Tim Peters</span>
+                    <span>Tools: TallyLCA</span>
+                </div>
+                <p class="project-description">
+                    This study quantifies the carbon impacts of fundamental structural decisions for a university campus building. The challenge was determining whether structural system substitution alone could significantly reduce embodied carbon, and by how much.<br>
+                    <strong><em>Approach: </em></strong>Three structural systems were modeled and compared across both mass and global warming potential: all-timber construction, hybrid timber-concrete-steel, and conventional steel frame. Life cycle assessment methodology tracked embodied carbon across material extraction, manufacturing, transportation, and construction phases.<br>
+                    The analysis revealed timber framing alone reduced global warming potential by 86% compared to the steel baseline. The hybrid system achieved a 51% reduction, demonstrating that material selection in the structural systems could drastically reduce embodied carbon.<br>
+                    <strong><em>Key Findings: </em></strong>The study then traced pathways from a campus baseline of 800 kgCO2/m2 down to 170 kgCO2/m2 over a 60-year lifecycle. Building reuse eliminated new structural carbon. Timber framing provided the steepest single reduction. Envelope and interior strategies—bio-based insulation, reduced replacement rates, low-carbon procurement—contributed incremental but meaningful savings. The research demonstrated that achieving deep carbon reductions requires coordinated interventions across structure, envelope, interiors, and operations, not isolated material swaps.
+                </p>
             </div>
-            <p class="project-description">
-                The project explores the demands on a window, and the total potential there-in for it to do and be more, both environmentally and culturally. My research explores how windows affect sleep quality through two often-overlooked factors: ambient light at night and environmental noise. Rather than evaluating windows solely for thermal performance or views, the project centers on occupant wellbeing and circadian health.
-            </p>
-            <p class="project-description">
-                The investigation combined spatial analysis with environmental monitoring to understand the window's role as a mediator between exterior conditions and interior comfort. Ray tracing identified external light sources like street lamps and traffic signals, while RGB imaging photometry captured how nighttime light actually affects human photoreceptors. Light sensors tracked exposure patterns from the window sill to bedside, documenting how early morning daylight enters the space.
-Acoustic measurements compared sound levels with the window open and closed across different times of day. Spectral frequency analysis revealed not just decibel levels, but the character of noise from idling vehicles to accelerating traffic that penetrates the interior.
-The study reveals windows as critical regulators of health, managing the light and sound that shape our daily rhythms and sleep quality.
-            </p>
+
+            <!-- First Project Images -->
+            <div class="project-images">
+                <img src="images/project7/project1-image1.jpg" alt="LCA diagram">
+                <!-- Add more images for this project if needed -->
+                <img src="images/project7/project1-image2.jpg" alt="Stairstep">
+            </div>
         </div>
 
-        <!-- Project Images -->
-        <div class="project-images">
-            <img src="images/project2/image1.jpg" alt="Project 2 - Image 1">
-            <img src="images/project2/image2.jpg" alt="Project 2 - Image 2">
-            <img src="images/project2/image3.jpg" alt="Project 2 - Image 3">
-            <img src="images/project2/image4.jpg" alt="Project 2 - Image 4">
-            <img src="images/project2/image5.jpg" alt="Project 2 - Image 5">
+        <!-- Separator between projects -->
+        <div class="project-separator"></div>
+
+        <!-- Second Project -->
+        <div class="sub-project">
+            <div class="project-header">
+                <h1>Vertical Forest Carbon Analysis</h1>
+                <div class="project-meta">
+                    <span>Year: 2025</span>
+                    <span>Type: Conference Presentation</span>
+                    <span>Collaborators: James Timberlake</span>
+                    <span>Tools: C.Scale</span>
+                </div>
+                <p class="project-description">
+                    This research investigates: can adding trees to buildings increase carbon emissions? As "vertical forests" proliferate in architectural culture, this study examined whether intensive balcony planting creates environmental benefits or simply adds to the carbon-intensive construction.<br>
+                    <strong><em>Approach: </em></strong>Four hypothetical scenarios were developed for a 20-story building. Each scenario was evaluated for embodied carbon, operational carbon, and carbon storage over 30 years. The vertical forest configuration required additional structural capacity due to  additional live loads, irrigation systems, and intensive planting media. The analysis tracked whether operational savings from shading could offset the embodied carbon penalty.<br>
+                    <strong><em>Key Findings: </em></strong>Planting on balconies increased embodied carbon by 30-50% due to structural reinforcement and planting infrastructure. However, total carbon over 30 years remained comparable to the baseline because operational savings from passive cooling were considerable. The stored carbon from plants was negligible compared to building-scale emissions. The research revealed that vertical forests aren't inherently sustainable, their carbon footprint depends entirely on whether operational benefits justify the embodied carbon investment, a calculation that varies dramatically by climate, building type, and maintenance regime.
+                </p>
+            </div>
+
+            <!-- Second Project Images -->
+            <div class="project-images">
+                <img src="images/project7/project2-image1.jpg" alt="Scenario description">
+                <!-- Add more images for this project if needed -->
+                <img src="images/project7/project2-image2.jpg" alt="Analysis">
+            </div>
         </div>
     </section>
 
