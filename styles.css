@@ -37,14 +37,14 @@ header {
 .nav-content {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 0 3rem;
+    padding: 0 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .logo {
-    font-size: 1.1rem;
+    font-size: 1.6rem;
     font-weight: 500;
     color: var(--text-primary);
     text-decoration: none;
@@ -345,7 +345,7 @@ footer {
     }
     
     .hero-profile {
-        width: 200px;
+        width: 100px;
         margin: 0 auto;
     }
     
