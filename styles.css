@@ -372,3 +372,21 @@ footer {
         text-align: center;
     }
 }
+/* Links within text content */
+.project-description a,
+.intro a,
+.credentials a,
+.cv-item-subtitle a {
+    color: inherit;           /* Uses parent text color */
+    text-decoration: underline;
+    text-decoration-color: #999999;  /* Subtle gray underline */
+    transition: all 0.2s ease;
+}
+
+.project-description a:hover,
+.intro a:hover,
+.credentials a:hover,
+.cv-item-subtitle a:hover {
+    color: #1a1a1a;          /* Darker on hover */
+    text-decoration-color: #1a1a1a;  /* Darker underline on hover */
+}
